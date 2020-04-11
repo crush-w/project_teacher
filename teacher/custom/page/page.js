@@ -1,29 +1,53 @@
-// pages/teacher/extract/page3/page3.js
+// pages/teacher/custom/page/page.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date_1:null,
-    weekday:null,
-    time1:null,
-    time2:null,
-    listData:null,
+    select: false,
+    Boys_name: '--',
+    Girls_name: '--',
+    Apart_name: '--',
+    Num_name: '--',
+    Boys: [0,1,2,3,4,5,6],
+    Girls:[0,1,2,3,4],
+    Apart:['东二','中一','中一'],
+    Num:['101','102']
   },
+  bindShowMsg() {
+    this.setData({
+      select: !this.data.select
+    })
+  },
+  mySelect(e) {
+    console.log(e)
+    var name = e.currentTarget.dataset.name
+    this.setData({
+      Boys_name: name,
+      select: false
+    })
+  },
+  bindShowMsg() {
+    this.setData({
+      select: !this.data.select
+    })
+  },
+  mySelect1(e) {
+    console.log(e)
+    var name = e.currentTarget.dataset.name
+    this.setData({
+      Girls_name: name,
+      select: false
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    var that = this
-    that.setData({
-      date_1:options.dateData,
-      weekday:options.weekData,
-      time1:options.time1Data,
-      time2:options.time2Data,
-    })
+
   },
 
   /**

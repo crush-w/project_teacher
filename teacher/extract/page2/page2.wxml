@@ -3,7 +3,7 @@
 
 <!-- <view id="Star_time">开始时间：{{time1}}</view> -->
 <view class="Section">
-  <view class="Data">当前日期:{{data}} {{weekday}}</view>
+  <view class="Date">当前日期:{{date_1}} {{weekday}}</view>
   <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange1">
     <view class="Start">
       开始时间: {{time1}}
@@ -30,5 +30,6 @@
 </view>
 <view class="but">
   <button class="reset">重新抽取</button>
-  <button class="submit">确认</button>
+  <button bindtap='buttonListener' class="submit">确认</button>
 </view>
+
