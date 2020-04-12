@@ -38,5 +38,4 @@
 }
 .reset,.submit{
   font-weight: normal;
-  border: solid 1px darkgray;
 }

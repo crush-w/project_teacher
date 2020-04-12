@@ -84,7 +84,7 @@ Page({
    switch (today){
        case 0:
        this.setData({
-         weekday: this.week[0]
+         weekday: this.data.week[0]
        }) 
        break; 
        case 1:

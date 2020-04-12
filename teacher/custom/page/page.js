@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    hiddenName1:null,
+    hiddenName2:null,
+    hiddenName3:null,
+    hiddenName4:null,
     select: false,
     Boys_name: '--',
     Girls_name: '--',
@@ -17,6 +21,10 @@ Page({
   },
   bindShowMsg() {
     this.setData({
+      hiddenName1:false,
+      hiddenName2:true,
+      hiddenName3:true,
+      hiddenName4:true,
       select: !this.data.select
     })
   },
@@ -28,8 +36,12 @@ Page({
       select: false
     })
   },
-  bindShowMsg() {
+  bindShowMsg1() {
     this.setData({
+      hiddenName1:true,
+      hiddenName2:false,
+      hiddenName3:true,
+      hiddenName4:true,
       select: !this.data.select
     })
   },
@@ -38,6 +50,40 @@ Page({
     var name = e.currentTarget.dataset.name
     this.setData({
       Girls_name: name,
+      select: false
+    })
+  },
+  bindShowMsg2() {
+    this.setData({
+      hiddenName1:true,
+      hiddenName2:true,
+      hiddenName3:false,
+      hiddenName4:true,
+      select: !this.data.select
+    })
+  },
+  mySelect2(e) {
+    console.log(e)
+    var name = e.currentTarget.dataset.name
+    this.setData({
+      Apart_name: name,
+      select: false
+    })
+  },
+  bindShowMsg3() {
+    this.setData({
+      hiddenName1:true,
+      hiddenName2:true,
+      hiddenName3:true,
+      hiddenName4:false,
+      select: !this.data.select
+    })
+  },
+  mySelect3(e) {
+    console.log(e)
+    var name = e.currentTarget.dataset.name
+    this.setData({
+      Num_name: name,
       select: false
     })
   },

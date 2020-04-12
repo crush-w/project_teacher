@@ -72,11 +72,10 @@
 }
 
 /* 下拉内容 */
-.one_select_box_1 {
+.one_select_box_1,.one_select_box_2{
   margin-left: 135rpx;
   margin-top: 57rpx;
   width: 15%;
-  height: 420rpx;
   background-color: #fff;
   overflow: hidden;
   animation: myfirst 0.2s;
@@ -93,7 +92,6 @@
   line-height: 60rpx;
   border-bottom: 1px solid #ccc;
 }
-
 /* 下拉过度效果 */
 
 @keyframes myfirst {
@@ -105,3 +103,29 @@
     height: 210rpx;
   }
 }
+.one_select_box_1{
+  height: 420rpx; 
+}
+.one_select_box_2{
+  height: 300rpx;
+}
+
+.two_select_box_1,.two_select_box_2{
+  margin-top: 57rpx;
+  width: 20%;
+  background-color: #fff;
+  overflow: hidden;
+  animation: myfirst 0.2s;
+  font-size: 30rpx;
+  z-index: 1; /*显示在最上层 */
+  position: absolute;
+}
+.two_select_box_1{
+  height: 200rpx;
+  margin-left: 18rpx;
+}
+.two_select_box_2{
+  height: 150rpx;
+  margin-left: 240rpx;
+}
+

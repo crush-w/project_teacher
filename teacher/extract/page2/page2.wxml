@@ -29,7 +29,7 @@
   </block>
 </view>
 <view class="but">
-  <button class="reset">重新抽取</button>
-  <button bindtap='buttonListener' class="submit">确认</button>
+  <button class="reset" style="width:40%">重新抽取</button>
+  <button bindtap='buttonListener' class="submit" style="width:40%">确认</button>
 </view>
 
